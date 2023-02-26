@@ -1,3 +1,4 @@
+# Author: Charlie Demasi
 def insertion_sort(list_a):
     if len(list_a) <= 100000:
         #continue 
