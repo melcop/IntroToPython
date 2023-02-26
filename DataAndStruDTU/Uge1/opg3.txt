@@ -1,0 +1,15 @@
+Algoritmer og anvendelser
+1. Vælg en datastruktur som du kender fra dit indledende programmeringskursus og diskuter dens
+styrker og svagheder.
+
+Det bedste ved en grundlæggende array i Java er, at det kan læses fra og skrives til hurtigt. 
+Men permanent at tilføje eller fjerne et element fra arrayet kræver megen tid, fordi Java ikke understøtter dynamiske arrays.
+Hver gang du ændrer størrelse på et array i Java, skal du genopbygge array igen fra bunden, ét element ad gangen, med en løkke.
+Du kan undgå dette ved altid initialisering dine arrays til den maksimale størrelse, der kræves på ethvert tidspunkt under runtime , 
+men det kan være en dramatisk spild af hukommelse og er bare dårlig design i almindelighed .
+
+2. Nævn et problem fra den virkelige verden, hvor kun den optimale løsning vil være god nok. Nævn et
+problem fra den virkelige verden, hvor det er tilstrækkeligt at komme med en approksimering.
+Statistik -> beregning af vejret. En tilnærmelse af mulighed for regn, det kan være at man bruger array til det.
+
+3. Foreslå relevante kompleksitetsmål ud over tid. Nævn mindst 3
