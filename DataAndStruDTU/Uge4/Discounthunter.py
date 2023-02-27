@@ -17,18 +17,18 @@ def insertion_sort(list_a):
     return  list_a
 
 #Her er jeg i gang med at teste og se om jeg kan splite min liste om i subliste ad 3 
-def discount_hunt(list_b):
+def discount_hunt(prices_unsorted):
 
-    list_c = insertion_sort(list_b)
-    #lengc = len(list_c)
-    #chunks(list_c, lengc) 
-    chunks= [list_c[x:x+3] for x in range(0, len(list_c), 100)]
-    return chunks
 
-#def chunks(lst, n):
-#    """Yield successive n-sized chunks from lst."""
-#    for i in range(0, len(lst), n):
-#        yield lst[i:i + n]
-    
-#print(insertion_sort([10, 200, 75, 5, 25, 50, 100]))
-print(discount_hunt([10, 200, 75, 5, 25, 50, 100]))
+    prices = insertion_sort(prices_unsorted)
+    total_discount = 0
+    for i in range(2, len(prices), 3):
+        total_discount = total_discount + prices[i]
+    return total_discount
+
+def discount_hunt2(prices):
+    prices.sort(reverse=True)
+    return sum(prices[2::3])
+
+print(discount_hunt2([10, 200, 75, 5, 25, 50, 100]))
+print(discount_hunt([1, 30]))
