@@ -1,6 +1,4 @@
 # Author: Charlie Demasi
-list_totest=[]
-
 def insertion_sort(list_a):
     if len(list_a) <= 100000:
         #continue 
@@ -26,7 +24,9 @@ def discount_hunt(prices_unsorted):
         total_discount = total_discount + prices[i]
     return total_discount
 
-if __name__ == "__main__":
-    discount_hunt(list_totest)
-    
+def discount_hunt2(prices):
+    prices.sort(reverse=True)
+    return sum(prices[2::3])
 
+print(discount_hunt2([10, 200, 75, 5, 25, 50, 100]))
+print(discount_hunt([1, 30]))
