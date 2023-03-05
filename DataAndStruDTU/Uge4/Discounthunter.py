@@ -1,4 +1,6 @@
 # Author: Charlie Demasi
+list_totest=[]
+
 def insertion_sort(list_a):
     if len(list_a) <= 100000:
         #continue 
@@ -16,19 +18,15 @@ def insertion_sort(list_a):
 
     return  list_a
 
-#Her er jeg i gang med at teste og se om jeg kan splite min liste om i subliste ad 3 
+
 def discount_hunt(prices_unsorted):
-
-
     prices = insertion_sort(prices_unsorted)
     total_discount = 0
     for i in range(2, len(prices), 3):
         total_discount = total_discount + prices[i]
     return total_discount
 
-def discount_hunt2(prices):
-    prices.sort(reverse=True)
-    return sum(prices[2::3])
+if __name__ == "__main__":
+    discount_hunt(list_totest)
+    
 
-print(discount_hunt2([10, 200, 75, 5, 25, 50, 100]))
-print(discount_hunt([1, 30]))
