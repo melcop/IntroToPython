@@ -4,8 +4,8 @@ import numpy as np
 
 fig, ax = plt.subplots()
 rng = np.random.default_rng(19680801)
-data = np.array([20, 20, 20, 20])
-x = np.array([1, 2, 3, 4])
+data = np.array([20, 20, 20, 20, 10])
+x = np.array([1, 2, 3, 4, 5])
 
 artists = []
 colors = ['tab:blue', 'tab:red', 'tab:green', 'tab:purple']

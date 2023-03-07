@@ -1,4 +1,5 @@
 # Generate the figure **without using pyplot**.
+from matplotlib.figure import Figure
 fig = Figure()
 ax = fig.subplots()
 y = [1, 8, 1, 7]
@@ -17,3 +18,5 @@ ax.spines['left'].set_color('blue') # setting up Y-axis tick color to blue
 ax.spines['top'].set_color('blue') #setting up above X-axis tick color to blue
 ax.spines['bottom'].set_color('blue') #setting up above X-axis tick color to blue
 ax.spines['right'].set_color('blue') #setting up above X-axis tick color to blue
+
+fig.show
