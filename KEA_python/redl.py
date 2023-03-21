@@ -4,9 +4,9 @@ from time import sleep
 # led rød, på pin 25
 ledr = PWMLED(25)
 # led gul, på pin 24
-ledy = PWMLED(25)
+ledy = PWMLED(24)
 # led grøn, på pin 23
-ledg = PWMLED(25)
+ledg = PWMLED(23)
 # Initializer i
 i = 0
 
