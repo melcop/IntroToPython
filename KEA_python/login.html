@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	{% if error %}
+		<p style="color:red">{{ error }}</p>
+	{% endif %}
+	<form method="POST" action="/login">
+		<label for="brugernavn">Brugernavn:</label>
+		<input type="text" id="brugernavn" name="brugernavn"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<input type="submit" value="Log ind">
+	</form>
+</body>
+</html>
+
+
+<!--Kør applikationen ved at køre python app.py i terminalen og navigere til http://localhost:5000 i en browser -->
